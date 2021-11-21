@@ -1,0 +1,9 @@
+<input type="text">
+<button (click)="addItem()">add item</button>
+
+    <ul>
+        <li *ngFor="let item of items">
+            {{ item.itemName }}
+            <button (click)="removeItem()">delete item</button>
+        </li>
+    </ul>
