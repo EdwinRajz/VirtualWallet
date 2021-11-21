@@ -1,9 +1,9 @@
-<input type="text">
-<button (click)="addItem()">add item</button>
+<input type="text" [(ngModel)]="newItemName">
+<button (click)="addItem(newItemName)">add item</button>
 
     <ul>
         <li *ngFor="let item of items">
             {{ item.itemName }}
-            <button (click)="removeItem()">delete item</button>
+            <button (click)="removeItem(item.itemId)">delete item</button>
         </li>
     </ul>

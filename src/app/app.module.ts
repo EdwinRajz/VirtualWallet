@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TodoComponent } from './components/dashboard/todo/todo.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,8 +18,8 @@ import { TodoComponent } from './components/dashboard/todo/todo.component';
     TodoComponent
   ],
   imports: [
-    BrowserModule
-
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

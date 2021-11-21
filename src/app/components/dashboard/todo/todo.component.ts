@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo.component.css']
 })
 export class TodoComponent implements OnInit {
-  name: String = '';
+  newItemName: string = "";
   items = [
     {
       itemId: 1,
@@ -21,15 +21,14 @@ export class TodoComponent implements OnInit {
       itemName: "Tether",
     }
   ];
-  addItem = () => {
-
-
+  addItem = (inputName: string) => {
+    this.items.push({ itemId: (this.items.length + 1), itemName: inputName });
+    console.log(this.items.length);
   }
 
-  removeItem = () => {
-
+  removeItem = (inputId: number) => {
+    this.items = this.items.filter(obj => obj.itemId !== inputId);
   }
-
 
   constructor() { }
 
