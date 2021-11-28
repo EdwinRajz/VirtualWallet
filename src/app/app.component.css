@@ -1,5 +1,4 @@
-.content {
-    max-width: 1200px;
-    margin: auto;
-    font-family:courier;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}

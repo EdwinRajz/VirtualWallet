@@ -1,0 +1,14 @@
+<div class="grid-container">
+  <div *ngFor="let coin of coins; let i = index">
+    <mat-card class="coin-card">
+      <img mat-card-md-image class="image-container" src={{coin.image}}>
+      <mat-card-title-group class="card-title-group">
+        <mat-card-title class="title">{{coin.name}}</mat-card-title>
+        <mat-card-subtitle class="title"><strong>{{coin.current_price.toFixed(2)}} $usd</strong></mat-card-subtitle>
+      </mat-card-title-group>
+      <mat-card-content>
+        <mat-card-subtitle class="title">{{coin.last_updated | date:"medium"}}</mat-card-subtitle>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

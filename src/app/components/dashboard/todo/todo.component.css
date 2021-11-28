@@ -1,6 +1,11 @@
+.todo-container {
+  margin: 100px;
+}
+
 .input-container {
   max-width: 250px;
 }
+
 input {
   outline: none;
   border-top: none;
@@ -8,14 +13,13 @@ input {
   border-right: none;
   border-color: #d4af37;
   line-height: 40px;
-  font-family: courier;
+
   width: 190px;
 }
 input::placeholder {
   color: grey;
   opacity: 0.4;
   font-size: large;
-  font-family: courier;
 }
 
 ul {

@@ -7,6 +7,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TodoComponent } from './components/dashboard/todo/todo.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CoinService } from './service/coin.service';
+import { MatCardModule } from '@angular/material/card';
+import { CoinComponent } from './components/dashboard/coin/coin.component';
 
 
 @NgModule({
@@ -15,13 +19,16 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     DashboardComponent,
     FooterComponent,
-    TodoComponent
+    TodoComponent,
+    CoinComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [CoinService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

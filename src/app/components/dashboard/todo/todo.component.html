@@ -1,13 +1,13 @@
-<div class="input-container">
+<hr>
+<div class="todo-container">
+  <div class="input-container">
     <input type="text" [(ngModel)]="newItemName" placeholder="add item">
     <button class="add-button" (click)="addItem(newItemName)">+</button>
-</div>
-
-<ul>
+  </div>
+  <ul>
     <li *ngFor="let item of items">
-        {{ item.itemName }}
-        <button class="delete-button" (click)="deleteItem(item.itemId)">-</button>
-        
+      {{ item.itemName }}
+      <button class="delete-button" (click)="deleteItem(item.itemId)">-</button>
     </li>
-    
-</ul>
+  </ul>
+</div>
