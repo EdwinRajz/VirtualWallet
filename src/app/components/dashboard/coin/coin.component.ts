@@ -7,10 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CoinComponent implements OnInit {
 
-  @Input() coins: any;
+  @Input() coin: any;
   
-  
-
   constructor() { }
 
   ngOnInit(): void {

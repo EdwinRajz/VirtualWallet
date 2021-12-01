@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CoinService } from './service/coin.service';
 import { MatCardModule } from '@angular/material/card';
 import { CoinComponent } from './components/dashboard/coin/coin.component';
+import { CoinsComponent } from './components/dashboard/coins/coins.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CoinComponent } from './components/dashboard/coin/coin.component';
     DashboardComponent,
     FooterComponent,
     TodoComponent,
-    CoinComponent
+    CoinComponent,
+    CoinsComponent
   ],
   imports: [
     BrowserModule,
