@@ -7,7 +7,6 @@ import { CoinService } from './service/coin.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Virtual Wallet';
   coins: any = [];
 
   constructor(private coinsService: CoinService) {

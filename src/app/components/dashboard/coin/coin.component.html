@@ -1,5 +1,5 @@
 <mat-card class="coin-card">
-  <img mat-card-md-image class="image-container" src={{coin.image}}>
+  <img mat-card-md-image class="image-container" [src]="coin.image">
   <mat-card-title-group class="card-title-group">
     <mat-card-title class="title">{{coin.name}}</mat-card-title>
     <mat-card-subtitle class="title"> <strong>{{coin.current_price.toFixed(2)}} $usd</strong></mat-card-subtitle>

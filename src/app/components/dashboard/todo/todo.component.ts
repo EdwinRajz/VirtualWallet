@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-
 @Component({
   selector: 'app-todo',
   templateUrl: './todo.component.html',
@@ -24,8 +23,15 @@ export class TodoComponent implements OnInit {
     }
   ];
   addItem = (inputName: string) => {
-    this.items.push({ itemId: (this.items.length + 1), itemName: inputName });
-    console.log(this.items);
+
+    if (inputName == "") {
+      alert("Please add an item")
+    }
+    else {
+      this.items.push({ itemId: (this.items.length + 1), itemName: inputName });
+      console.log(this.items);
+    }
+
   }
 
   deleteItem = (inputId: number) => {
